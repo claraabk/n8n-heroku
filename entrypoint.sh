@@ -16,7 +16,7 @@ N8N_DB_HOST="$(echo $N8N_DB_HOSTPORT | sed -e 's,:.*,,g')"
 N8N_DB_PORT="$(echo $N8N_DB_HOSTPORT | sed -e 's,^.*:,:,g' -e 's,.*:\([0-9]*\).*,\1,g' -e 's,[^0-9],,g')"
 
 export DB_TYPE=$DB_TYPE
-
+export N8N_ENCRYPTION_KEY=$N8N_ENCRYPTION_KEY
 
 # kickstart nodemation
 n8n
